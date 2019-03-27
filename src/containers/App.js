@@ -8,13 +8,15 @@ import './App.css';
 import { setSearchField } from '../actions';
 
 /* diffuse the state change to component props */
+/* tell me what piece of state i should listen to send that as props  */
 const mapStateToProps = (state) => {
   return {
     searchField: state.searchField
   }
 }
 
-/* diffuse an event action to reducer */ 
+/* diffuse an event action to reducer */
+/* tell me what props i should listen to action i need to get dispatched */ 
 /* The only way to update data in your store is to dispatch actions */
 const mapDispatchToProps = (dispatch) => {
     return {
